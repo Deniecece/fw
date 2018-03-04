@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE jdbc >
+<jdbc>
+	<connection>
+		<driver>oracle.jdbc.OracleDriver</driver>
+		<url>jdbc:oracle:thin:@localhost:1521:bjpowernode</url>
+		<username>st</username>
+		<password>shantong</password>
+	</connection>
+			
+</jdbc>

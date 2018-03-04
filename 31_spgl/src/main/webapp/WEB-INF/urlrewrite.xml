@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite >
+<urlrewrite>
+	<rule>
+		<from>^/go_(.+)1.html</from>
+		<to>/WEB-INF/template/$1.jsp</to>
+	</rule>
+	<rule>
+		<from>^/go_(.+).html</from>
+		<to>/$1.action</to>
+	</rule>
+
+</urlrewrite>

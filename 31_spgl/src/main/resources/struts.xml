@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<constant name="struts.action.extension" value="action"></constant>
+	<constant name="struts.configuration.xml.reload" value="true"></constant>
+	
+	<package name="st" extends="struts-default" namespace="/">
+		<action name="data" class="com.action.ProAction" method="tForPag">
+		</action>
+		<action name="delete" class="com.action.ProAction" method="delete"></action>
+		<action name="productUpload" class="com.action.ProAction" method="fileUpload"></action>
+	</package>
+</struts>
