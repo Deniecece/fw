@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE mvc[]>
+<mvc>
+	<constant name="encoding" value="utf-8" />
+	<constant name="reload" value="true" />
+	<constant name="suffix" value=".do,.action,.dmc"/>
+
+	<!-- 请求映射关系 -->
+	<action name="login" class="com.action.UserAction" method="login">
+		<result name="success" type="dispatcher">main.jsp</result>
+		<result name="fail" type="redirect">login.jsp</result>
+	</action>
+	<action name="down" class="com.action.UserAction" method="down">
+		<result name="success" type="download">getInputStream</result>
+	</action>
+</mvc>
